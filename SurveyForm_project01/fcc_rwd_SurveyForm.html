@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="fcc_rwd_SurveyForm.css" />
+  </head>
+  <body>
+    <fieldset>
+    <h1 id="title">
+      How can the KAAMT Foundation services improve?
+    </h1>
+    <p id="description">
+      ...your feedback is greatly valued.
+    </p>
+    </fieldset>
+
+
+    <fieldset>
+    <form id="survey-form">
+
+<div class="elements">
+      <label id="name-label">Full Name <input id="name" type="text" placeholder="Enter Full Name..." required /></label>
+      </div>
+
+<div class="elements">
+    <label id="email-label">Email <input id="email" type="email" placeholder="Enter Email address..." checked required /></label>
+    </div>
+
+<div class="elements ">
+    <label id="number-label">Phone Number(optional) <input id="number" type="number" min="0" max="9" placeholder="Enter Phone Number..." checked/></label>
+    </div>
+
+<div class="elements">
+  <lable>Which KAAMT service would you like to comment on?</lable>
+<select id="dropdown">
+  <option>Consultancy</option>
+   <option>Curation</option>
+  <option>Publication</option>
+   <option>Management</option> 
+   <option>General Services</option>
+</select>
+</div>
+
+<div class="elements">
+  <lable>Have you used this service within the past month?</lable>
+  <lable><input value="01" name="rbutton" type="radio" />Yes</lable>
+  <lable><input value="02" name="rbutton" type="radio" />No</lable>
+</div>
+
+<div class="elements">
+
+  <lable>Where did you hear about the KAAMT Foundation?</lable>
+
+  <div class="elements"><input type="checkbox" value="Friends & Family" />Friends & Family
+  </div>
+  <div class="elements"><input type="checkbox" value="Website" />Website
+  </div>
+  <div class="elements"><input type="checkbox" value="Social Media " />Social Media 
+  </div>
+
+</div>
+
+<div class="elements">
+Comments
+<textarea placeholder="Enter your comments here..." ></textarea> 
+</div>
+
+<div class="elements">
+<button id="submit">Submit</button>
+</div>
+
+    </form>
+    </fieldset>
+    </body>
